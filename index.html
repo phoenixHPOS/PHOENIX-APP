@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOENIX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔥 PHOENIX 🔥</h1>
+    <h2>Gymbro Tracker</h2>
+
+    <!-- BLOC XP -->
+    <div class="card xp-container">
+        <h3>🏆 Niveau <span id="user_level">1</span> - <span id="user_title">Novice</span></h3>
+        <p class="xp-text" style="color: #ff6600;">XP Global : <span id="global_xp">0</span></p>
+        
+        <hr style="border-color: #444; margin: 15px 0;">
+        
+        <h4 style="margin: 0 0 10px 0;">Progression de la séance</h4>
+        <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="session_bar"></div>
+        </div>
+        <p class="xp-text"><span id="session_pct">0</span>% complété</p>
+    </div>
+
+    <!-- BARRE DE NAVIGATION (ONGLETS) -->
+    <div class="tabs-container">
+        <button class="tab-btn active" data-target="seance_1">S1 Pec/Tri</button>
+        <button class="tab-btn" data-target="seance_2">S2 Dos/Bi</button>
+        <button class="tab-btn" data-target="seance_3">S3 Jambes</button>
+        <button class="tab-btn" data-target="seance_4">S4 Bras/Ép</button>
+        <button class="tab-btn" data-target="seance_5">Rappel</button>
+    </div>
+
+    <!-- CONTENEUR SÉANCE 1 -->
+    <div id="seance_1" class="seance-content" style="display: block;">
+        <h2 style="text-align: center;">💪 S1 - Pectoraux / Biceps</h2>
+        
+        <!-- TES CARTES D'EXERCICES ACTUELLES COMMENCENT ICI -->
+
+    <!-- EXERCICES -->
+    <div class="card">
+        <h3>💪 Développé convergent</h3>
+        <table>
+            <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>💪 Smith incliné</h3>
+        <table>
+            <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>💪 Poulie haute (bras par bras)</h3>
+        <table>
+            <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>💪 Poulie basse des pectoraux</h3>
+        <table>
+            <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>💪 Dips</h3>
+        <table>
+            <tr><th>Série</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>💪 Curl poulie</h3>
+        <table>
+            <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>💪 Curl marteau (superset)</h3>
+        <table>
+            <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>🏃 Cardio</h3>
+        <table>
+            <tr>
+                <th style="width: 30%;">Temps</th>
+                <th style="width: 25%;">Vitesse</th>
+                <th style="width: 25%;">Inclin.</th>
+                <th style="width: 20%;">OK</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="cardio_temps" placeholder="25 min"></td>
+                <td><input type="number" id="cardio_vitesse" step="0.1" placeholder="5"></td>
+                <td><input type="number" id="cardio_inclinaison" step="0.5" placeholder="10"></td>
+                <td><input type="checkbox" id="cardio_ok"></td>
+            </tr>
+        </table>
+    </div>
+
+    </div> <!-- FIN DU CONTENEUR SÉANCE 1 -->
+
+    <div id="seance_2" class="seance-content">
+        <h2 style="text-align: center;">💪 S2 - Dos / Biceps</h2>
+        
+        <div class="card">
+            <h3>💪 Tirage vertical (1)</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Tirage horizontal</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Pull over poulie</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Machine assistée dos</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Curl poulie</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Prise marteau</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>🏃 Cardio</h3>
+            <table>
+                <tr><th style="width: 30%;">Temps</th><th style="width: 25%;">Vitesse</th><th style="width: 25%;">Inclin.</th><th style="width: 20%;">OK</th></tr>
+                <tr>
+                    <td><input type="text" id="cardio_temps_s2" placeholder="25 min"></td>
+                    <td><input type="number" id="cardio_vitesse_s2" step="0.1" placeholder="5"></td>
+                    <td><input type="number" id="cardio_inclinaison_s2" step="0.5" placeholder="10"></td>
+                    <td><input type="checkbox" id="cardio_ok_s2"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="seance_3" class="seance-content">
+        <h2 style="text-align: center;">🦵 S3 - Jambes / Abdos</h2>
+        
+        <div class="card">
+            <h3>🦵 Presse</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>🦵 Fentes</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>🦵 Leg extension</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>🦵 Leg curl</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Gainage</h3>
+            <table>
+                <tr><th>Série</th><th>Temps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="text" placeholder="1 min"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="text" placeholder="1 min"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="text" placeholder="1 min"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>🧱 Crunch inversé</h3>
+            <table>
+                <tr><th>Série</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" placeholder="15"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" placeholder="15"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" placeholder="15"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" placeholder="15"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>🏃 Cardio</h3>
+            <table>
+                <tr><th style="width: 30%;">Temps</th><th style="width: 25%;">Vitesse</th><th style="width: 25%;">Inclin.</th><th style="width: 20%;">OK</th></tr>
+                <tr>
+                    <td><input type="text" id="cardio_temps_s3" placeholder="25 min"></td>
+                    <td><input type="number" id="cardio_vitesse_s3" step="0.1" placeholder="5"></td>
+                    <td><input type="number" id="cardio_inclinaison_s3" step="0.5" placeholder="10"></td>
+                    <td><input type="checkbox" id="cardio_ok_s3"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="seance_4" class="seance-content">
+        <h2 style="text-align: center;">💪 S4 - Bras / Épaules</h2>
+        
+        <div class="card">
+            <h3>💪 Curl biceps machine</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Corde biceps poulie</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Haltère biceps</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Triceps corde poulie</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Triceps corde extension poulie</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Triceps extension front poulie</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Triceps barre V poulie</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Élévation latérale poulie</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Élévation latérale haltères</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Développé militaire</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Élévation frontale poulie</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Arrière épaule poulie</h3>
+            <table><tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+            <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr></table>
+        </div>
+
+        <div class="card">
+            <h3>🏃 Cardio</h3>
+            <table>
+                <tr><th style="width: 30%;">Temps</th><th style="width: 25%;">Vitesse</th><th style="width: 25%;">Inclin.</th><th style="width: 20%;">OK</th></tr>
+                <tr>
+                    <td><input type="text" id="cardio_temps_s4" placeholder="25 min"></td>
+                    <td><input type="number" id="cardio_vitesse_s4" step="0.1" placeholder="5"></td>
+                    <td><input type="number" id="cardio_inclinaison_s4" step="0.5" placeholder="10"></td>
+                    <td><input type="checkbox" id="cardio_ok_s4"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="seance_5" class="seance-content">
+        <h2 style="text-align: center;">🔥 Rappel Pectoraux / Gainage</h2>
+        
+        <div class="card">
+            <h3>💪 Pec deck</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Press pec machine</h3>
+            <table>
+                <tr><th>Série</th><th>Poids</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>💪 Dips</h3>
+            <table>
+                <tr><th>Série</th><th>Reps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+                <tr><td>4</td><td><input type="number" min="0"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Gainage</h3>
+            <table>
+                <tr><th>Série</th><th>Temps</th><th>OK</th></tr>
+                <tr><td>1</td><td><input type="text" placeholder="1 min"></td><td><input type="checkbox"></td></tr>
+                <tr><td>2</td><td><input type="text" placeholder="1 min"></td><td><input type="checkbox"></td></tr>
+                <tr><td>3</td><td><input type="text" placeholder="1 min"></td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>🏃 Cardio</h3>
+            <table>
+                <tr><th style="width: 30%;">Temps</th><th style="width: 25%;">Vitesse</th><th style="width: 25%;">Inclin.</th><th style="width: 20%;">OK</th></tr>
+                <tr>
+                    <td><input type="text" id="cardio_temps_s5" placeholder="25 min"></td>
+                    <td><input type="number" id="cardio_vitesse_s5" step="0.1" placeholder="5"></td>
+                    <td><input type="number" id="cardio_inclinaison_s5" step="0.5" placeholder="10"></td>
+                    <td><input type="checkbox" id="cardio_ok_s5"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <button>
+        💾 Sauvegarder la séance
+    </button>
+
+</div>
+
+<!-- CHRONOMÈTRE FLOTTANT -->
+    <div class="chrono-container">
+        <div id="chrono_display">00:00</div>
+        <div class="chrono-buttons">
+            <button class="chrono-btn" data-time="60">1'</button>
+            <button class="chrono-btn" data-time="90">1'30</button>
+            <button class="chrono-btn" data-time="120">2'</button>
+            <button class="chrono-btn" data-time="150">2'30</button>
+            <button class="chrono-btn" data-time="180">3'</button>
+            <button class="chrono-btn stop" id="btn_stop_chrono">⏹</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
