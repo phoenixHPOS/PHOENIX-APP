@@ -170,7 +170,7 @@ table input[type="checkbox"] {
 
 /* --- Chronomètre Flottant --- */
 body {
-    padding-bottom: 160px; /* Évite que le chrono masque la fin de la page */
+    padding-bottom: 220px; /* Évite que le chrono masque la fin de la page */
 }
 
 .chrono-container {
@@ -228,4 +228,9 @@ body {
     border-color: #d9534f;
     color: white;
     flex: 0.6; /* Bouton stop légèrement plus petit */
+}
+
+input[type="number"], input[type="text"] {
+    background-color: #2a2a2a; /* Gris un peu plus clair */
+    border: 1px solid #555; /* Fine bordure pour délimiter */
 }
